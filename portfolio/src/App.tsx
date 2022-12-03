@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <h1>I love FAR games</h1>
+    
     </>
   );
 }
