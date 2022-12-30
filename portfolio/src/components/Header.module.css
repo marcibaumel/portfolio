@@ -1,0 +1,20 @@
+.tableClass {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    height: 7rem;
+}
+
+.name {
+    width: 100%;
+}
+
+.icons {
+    width: 30%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
