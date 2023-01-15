@@ -3,7 +3,11 @@ import styles from './ResumePage.module.css'
 
 const ResumePage = () => {
   return (
-    <div className={styles.content}>WIP</div>
+    <div className={styles.content}>
+      
+
+
+    </div>
   )
 }
 
