@@ -38,6 +38,7 @@ jobs:
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
+            echo "${{ github.workspace }}/frontend"
           exit 0
           else
             echo "Dependencies lock file (yarn.lock) not found."
