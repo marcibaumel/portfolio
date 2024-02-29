@@ -23,8 +23,7 @@ const Navbar = () => {
 
     return (
         <div>
-            
-            <div className='navbar dark:bg-base-100 hidden md:flex w-10'>
+            <div className='navbar dark:bg-base-100 hidden md:flex'>
                 <div className='flex-1'>
                     <a className='btn btn-ghost text-xl'>Baumel Márton</a>
                 </div>
