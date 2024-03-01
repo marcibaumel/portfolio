@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import { store } from '@/store/store';
+import React, { useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { TiAdjustBrightness } from 'react-icons/ti';
 import { WiMoonWaningCrescent2 } from 'react-icons/wi';
@@ -8,6 +9,11 @@ import { WiMoonWaningCrescent2 } from 'react-icons/wi';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isDark, setIsDark] = useState(true);
+
+    useEffect(() => {
+        setIsDark(store.getState().themeSettings.isDark);
+    }, [])
+    
 
     const handleOpenHamburgerMenu = () => {
         setIsOpen(!isOpen);
@@ -23,7 +29,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className='navbar dark:bg-base-100 hidden md:flex'>
+            <div className={`navbar ${isDark ? 'dark:bg-base-100' : 'bg-white'} hidden md:flex`}>
                 <div className='flex-1'>
                     <a className='btn btn-ghost text-xl'>Baumel Márton</a>
                 </div>
@@ -47,7 +53,7 @@ const Navbar = () => {
                             </details>
                         </li>
                         <li>
-                        <a>{isDark ? <WiMoonWaningCrescent2 size={20} /> : <TiAdjustBrightness size={20} />}</a>
+                        <a onClick={handleStyleChange}>{isDark ? <WiMoonWaningCrescent2 size={20} /> : <TiAdjustBrightness size={20} />}</a>
                         </li>
                     </ul>
                 </div>
