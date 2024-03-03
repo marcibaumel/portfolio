@@ -12,8 +12,7 @@ const Navbar = () => {
 
     useEffect(() => {
         setIsDark(store.getState().themeSettings.isDark);
-    }, [])
-    
+    }, []);
 
     const handleOpenHamburgerMenu = () => {
         setIsOpen(!isOpen);
@@ -21,14 +20,10 @@ const Navbar = () => {
 
     const handleStyleChange = () => {
         setIsDark(!isDark);
-    }
-
-    const closeDropdown = () => {
-
-    }
+    };
 
     return (
-        <div>
+        <div className='mb-4'>
             <div className={`navbar ${isDark ? 'dark:bg-base-100' : 'bg-white'} hidden md:flex`}>
                 <div className='flex-1'>
                     <a className='btn btn-ghost text-xl'>Baumel Márton</a>
@@ -53,15 +48,53 @@ const Navbar = () => {
                             </details>
                         </li>
                         <li>
-                        <a onClick={handleStyleChange}>{isDark ? <WiMoonWaningCrescent2 size={20} /> : <TiAdjustBrightness size={20} />}</a>
+                            <a onClick={handleStyleChange}>
+                                {isDark ? <WiMoonWaningCrescent2 size={20} /> : <TiAdjustBrightness size={20} />}
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-          
-            <div className='md:hidden p-10 btn btn-ghost text-xl'>
-                <GiHamburgerMenu size={20} />
+            <div className='md:hidden  m-6'>
+                <div className='text-center'>
+                    <div >
+                        <a className='btn btn-ghost text-xl'>Baumel Márton</a>
+                    </div>
+                  
+                    <GiHamburgerMenu
+                        size={30}
+                        onClick={handleOpenHamburgerMenu}
+                    />
+                  
+                </div>
+
+                {isOpen && (
+                    <ul className='menu bg-base-200 rounded-box'>
+                        <li>
+                            <a>Projects</a>
+                        </li>
+
+                        <li>
+                            <details>
+                                <summary>Language</summary>
+                                <ul className='p-2 bg-base-100 rounded-t-none'>
+                                    <li>
+                                        <a>English</a>
+                                    </li>
+                                    <li>
+                                        <a>Hungarian</a>
+                                    </li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <a onClick={handleStyleChange}>
+                                {isDark ? <WiMoonWaningCrescent2 size={20} /> : <TiAdjustBrightness size={20} />}
+                            </a>
+                        </li>
+                    </ul>
+                )}
             </div>
         </div>
     );
