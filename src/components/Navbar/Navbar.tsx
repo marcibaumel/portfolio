@@ -10,9 +10,12 @@ import { WiMoonWaningCrescent2 } from 'react-icons/wi';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isDark, setIsDark] = useState(true);
+    const [theme, setTheme] = useState('');
 
     useEffect(() => {
         setIsDark(store.getState().themeSettings.isDark);
+        const storedTheme = localStorage.getItem('theme') || 'dracula';
+        setTheme(storedTheme);
     }, []);
 
     const handleOpenHamburgerMenu = () => {
@@ -20,10 +23,17 @@ const Navbar = () => {
     };
 
     const handleStyleChange = () => {
+        if (theme === 'light') {
+            changeTheme('dracula');
+            setTheme('dark');
+        } else {
+            changeTheme('light');
+            setTheme('light');
+        }
         setIsDark(!isDark);
     };
 
-    const {changeTheme} = useContext(ThemeContext);
+    const { changeTheme } = useContext(ThemeContext);
 
     return (
         <div className='mb-4'>
@@ -52,24 +62,28 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a onClick={handleStyleChange}>
-                                {isDark ? <WiMoonWaningCrescent2 size={20} onClick={() => changeTheme('dracula')}/> : <TiAdjustBrightness size={20} onClick={() => changeTheme('light')}/>}
+                                {theme === 'light' ? (
+                                    <WiMoonWaningCrescent2 size={20} />
+                                ) : (
+                                    <TiAdjustBrightness size={20} />
+                                )}
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div className='md:hidden  m-6'>
+            <div className='md:hidden'>
                 <div className='text-center'>
-                    <div >
+                    <div>
                         <a className='btn btn-ghost text-xl'>Baumel Márton</a>
                     </div>
-                  
+
                     <GiHamburgerMenu
+                        className='m-4'
                         size={30}
                         onClick={handleOpenHamburgerMenu}
                     />
-                  
                 </div>
 
                 {isOpen && (
@@ -93,7 +107,11 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a onClick={handleStyleChange}>
-                                {isDark ? <WiMoonWaningCrescent2 size={20} onClick={() => changeTheme('dracula')} /> : <TiAdjustBrightness size={20} onClick={() => changeTheme('light')}/>}
+                                {theme === 'light' ? (
+                                    <WiMoonWaningCrescent2 size={20} />
+                                ) : (
+                                    <TiAdjustBrightness size={20} />
+                                )}
                             </a>
                         </li>
                     </ul>

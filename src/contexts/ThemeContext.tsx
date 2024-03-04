@@ -1,9 +1,10 @@
 'use client';
 
+import Spinner from '@/components/Spinner/Spinner';
 import React, { ReactNode, createContext, useEffect, useState } from 'react';
 
 export const ThemeContext = createContext<{ theme: string; changeTheme: (theme: string) => void }>({
-    theme: '',
+    theme: 'dracula',
     changeTheme: () => {},
 });
 
@@ -12,17 +13,17 @@ interface ILayout {
 }
 
 const ThemeProvider: React.FC<ILayout> = ({ children }) => {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dracula');
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
         setIsMounted(true);
-        const storedTheme = localStorage.getItem('theme') || 'light';
+        const storedTheme = localStorage.getItem('theme') || 'dracula';
         setTheme(storedTheme);
-    }, []);
+    }, [theme]);
 
     if (!isMounted) {
-        return <>Loading..</>;
+        return <Spinner/>
     }
 
     const changeTheme = (theme: string) => {
