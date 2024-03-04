@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import type { RootState } from "../store";
-import { IThemeSettingsSlice } from "@/@types/IAuthState";
+import { IThemeSettingsSlice } from "@/@types/IThemeSettingsSlice";
 
 const initialState: IThemeSettingsSlice = {
     isDark: true,

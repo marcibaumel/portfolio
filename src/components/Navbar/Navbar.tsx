@@ -1,7 +1,8 @@
 'use client';
 
+import { ThemeContext } from '@/contexts/ThemeContext';
 import { store } from '@/store/store';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { TiAdjustBrightness } from 'react-icons/ti';
 import { WiMoonWaningCrescent2 } from 'react-icons/wi';
@@ -22,9 +23,11 @@ const Navbar = () => {
         setIsDark(!isDark);
     };
 
+    const {changeTheme} = useContext(ThemeContext);
+
     return (
         <div className='mb-4'>
-            <div className={`navbar ${isDark ? 'dark:bg-base-100' : 'bg-white'} hidden md:flex`}>
+            <div className={`navbar hidden md:flex`}>
                 <div className='flex-1'>
                     <a className='btn btn-ghost text-xl'>Baumel Márton</a>
                 </div>
@@ -49,7 +52,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a onClick={handleStyleChange}>
-                                {isDark ? <WiMoonWaningCrescent2 size={20} /> : <TiAdjustBrightness size={20} />}
+                                {isDark ? <WiMoonWaningCrescent2 size={20} onClick={() => changeTheme('dracula')}/> : <TiAdjustBrightness size={20} onClick={() => changeTheme('light')}/>}
                             </a>
                         </li>
                     </ul>
@@ -90,7 +93,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a onClick={handleStyleChange}>
-                                {isDark ? <WiMoonWaningCrescent2 size={20} /> : <TiAdjustBrightness size={20} />}
+                                {isDark ? <WiMoonWaningCrescent2 size={20} onClick={() => changeTheme('dracula')} /> : <TiAdjustBrightness size={20} onClick={() => changeTheme('light')}/>}
                             </a>
                         </li>
                     </ul>

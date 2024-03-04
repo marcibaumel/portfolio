@@ -7,15 +7,28 @@ const config: Config = {
         './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
-        extend: {
-            
-        },
+        extend: {},
     },
     plugins: [require('daisyui')],
     daisyui: {
         logs: true,
         styled: true,
+        themes: [
+            'light',
+            'dark',
+            'retro',
+            'dracula',
+            {
+                mytheme: {
+                    primary: '#a991f7',
+                    secondary: '#f6d860',
+                    accent: '#37cdbe',
+                    neutral: '#3d4451',
+                    'base-100': '#ffffff',
+                },
+            },
+        ],
     },
-    darkMode: 'class'
+    darkMode: 'class',
 };
 export default config;
