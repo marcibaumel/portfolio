@@ -1,6 +1,7 @@
 'use client';
 
 import Spinner from '@/components/Spinner/Spinner';
+import { LanguageProvider } from '@/utils/useTrasnaltion';
 import React, { ReactNode, createContext, useEffect, useState } from 'react';
 
 export const ThemeContext = createContext<{ theme: string; changeTheme: (theme: string) => void }>({
@@ -23,7 +24,7 @@ const ThemeProvider: React.FC<ILayout> = ({ children }) => {
     }, [theme]);
 
     if (!isMounted) {
-        return <Spinner/>
+        return <Spinner />;
     }
 
     const changeTheme = (theme: string) => {
@@ -33,7 +34,9 @@ const ThemeProvider: React.FC<ILayout> = ({ children }) => {
 
     return (
         <ThemeContext.Provider value={{ theme, changeTheme }}>
-            <div>{children}</div>
+            <LanguageProvider language='hu'>
+                <div>{children}</div>
+            </LanguageProvider>
         </ThemeContext.Provider>
     );
 };
