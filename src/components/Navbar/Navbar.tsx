@@ -1,12 +1,12 @@
 'use client';
 
-import { ThemeContext } from '@/contexts/ThemeContext';
-import { useTranslation } from '@/contexts/useTranslation';
-import { store } from '@/store/store';
-import React, { useContext, useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { store } from '@/store/store';
+import { ThemeContext } from '@/contexts/ThemeContext';
 import { TiAdjustBrightness } from 'react-icons/ti';
+import { useTranslation } from '@/contexts/LanguageContext';
 import { WiMoonWaningCrescent2 } from 'react-icons/wi';
+import React, { useContext, useEffect, useState } from 'react';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);

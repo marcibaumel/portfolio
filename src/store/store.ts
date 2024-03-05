@@ -1,7 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import themeSettingsSlice from './slices/themeSettingsSlice'
 
-
 export const store =  configureStore({
   reducer: {
     themeSettings: themeSettingsSlice

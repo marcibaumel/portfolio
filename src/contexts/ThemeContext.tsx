@@ -1,8 +1,9 @@
 'use client';
 
+import { ILayout } from '../@types/ILayout';
+import { LanguageProvider } from '@/contexts/LanguageContext';
+import React, { createContext, useEffect, useState } from 'react';
 import Spinner from '@/components/Spinner/Spinner';
-import { LanguageProvider } from '@/contexts/useTranslation';
-import React, { ReactNode, createContext, useEffect, useState } from 'react';
 
 export const ThemeContext = createContext<{
     language: string;
@@ -15,10 +16,6 @@ export const ThemeContext = createContext<{
     changeTheme: () => {},
     changeLanguage: () => {},
 });
-
-interface ILayout {
-    children: ReactNode;
-}
 
 const ThemeProvider: React.FC<ILayout> = ({ children }) => {
     const [theme, setTheme] = useState('dracula');
