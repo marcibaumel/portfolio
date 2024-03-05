@@ -1,6 +1,7 @@
 'use client';
 
 import { ThemeContext } from '@/contexts/ThemeContext';
+import { useTranslation } from '@/contexts/useTranslation';
 import { store } from '@/store/store';
 import React, { useContext, useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -11,6 +12,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isDark, setIsDark] = useState(true);
     const [theme, setTheme] = useState('');
+    const t = useTranslation();
 
     useEffect(() => {
         setIsDark(store.getState().themeSettings.isDark);
@@ -34,6 +36,7 @@ const Navbar = () => {
     };
 
     const { changeTheme } = useContext(ThemeContext);
+    const { changeLanguage } = useContext(ThemeContext);
 
     return (
         <div className='mb-4'>
@@ -44,18 +47,18 @@ const Navbar = () => {
                 <div className='flex-none'>
                     <ul className='menu menu-horizontal px-1'>
                         <li>
-                            <a>Projects</a>
+                            <a>{t('projects')}</a>
                         </li>
 
                         <li>
                             <details>
-                                <summary>Language</summary>
+                                <summary>{t('languages')}</summary>
                                 <ul className='p-2 bg-base-100 rounded-t-none'>
                                     <li>
-                                        <a>English</a>
+                                        <a onClick={() => changeLanguage('en')}>{t('english')}</a>
                                     </li>
                                     <li>
-                                        <a>Hungarian</a>
+                                        <a onClick={() => changeLanguage('hu')}>{t('hungarian')}</a>
                                     </li>
                                 </ul>
                             </details>

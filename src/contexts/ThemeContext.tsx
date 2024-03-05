@@ -1,12 +1,19 @@
 'use client';
 
 import Spinner from '@/components/Spinner/Spinner';
-import { LanguageProvider } from '@/utils/useTrasnaltion';
+import { LanguageProvider } from '@/contexts/useTranslation';
 import React, { ReactNode, createContext, useEffect, useState } from 'react';
 
-export const ThemeContext = createContext<{ theme: string; changeTheme: (theme: string) => void }>({
+export const ThemeContext = createContext<{
+    language: string;
+    theme: string;
+    changeTheme: (theme: string) => void;
+    changeLanguage: (language: string) => void;
+}>({
+    language: 'en',
     theme: 'dracula',
     changeTheme: () => {},
+    changeLanguage: () => {},
 });
 
 interface ILayout {
@@ -15,13 +22,16 @@ interface ILayout {
 
 const ThemeProvider: React.FC<ILayout> = ({ children }) => {
     const [theme, setTheme] = useState('dracula');
+    const [language, setLanguage] = useState('en');
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
         setIsMounted(true);
         const storedTheme = localStorage.getItem('theme') || 'dracula';
+        const storedLanguage = localStorage.getItem('language') || 'en';
         setTheme(storedTheme);
-    }, [theme]);
+        setLanguage(storedLanguage);
+    }, []);
 
     if (!isMounted) {
         return <Spinner />;
@@ -32,9 +42,14 @@ const ThemeProvider: React.FC<ILayout> = ({ children }) => {
         localStorage.setItem('theme', theme);
     };
 
+    const changeLanguage = (language: string) => {
+        setLanguage(language);
+        localStorage.setItem('language', language);
+    };
+
     return (
-        <ThemeContext.Provider value={{ theme, changeTheme }}>
-            <LanguageProvider language='hu'>
+        <ThemeContext.Provider value={{ theme, changeTheme, language, changeLanguage }}>
+            <LanguageProvider language={language}>
                 <div>{children}</div>
             </LanguageProvider>
         </ThemeContext.Provider>

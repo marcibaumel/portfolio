@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslation } from '@/utils/useTrasnaltion';
+import { useTranslation } from '@/contexts/useTranslation';
 
 export default function Home() {
     const t = useTranslation();
