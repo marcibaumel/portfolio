@@ -11,7 +11,7 @@ export const useTranslation = () => {
     useEffect(() => {
         const loadTranslations = async () => {
             try {
-                const response = await fetch(`/translations/${currentLanguage}.json`);
+                const response = await fetch(`./translations/${currentLanguage}.json`);
                 if (response.ok) {
                     const data = await response.json();
                     setTranslations(data);
