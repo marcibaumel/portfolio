@@ -100,10 +100,10 @@ const Navbar = () => {
                                 <summary>Language</summary>
                                 <ul className='p-2 bg-base-100 rounded-t-none'>
                                     <li>
-                                        <a>English</a>
+                                        <a onClick={() => changeLanguage('en')}>English</a>
                                     </li>
                                     <li>
-                                        <a>Hungarian</a>
+                                        <a onClick={() => changeLanguage('hu')}>Hungarian</a>
                                     </li>
                                 </ul>
                             </details>
