@@ -92,18 +92,18 @@ const Navbar = () => {
                 {isOpen && (
                     <ul className='menu bg-base-200 rounded-box'>
                         <li>
-                            <a>Projects</a>
+                            <a>{t('projects')}</a>
                         </li>
 
                         <li>
                             <details>
-                                <summary>Language</summary>
+                                <summary>{t('languages')}</summary>
                                 <ul className='p-2 bg-base-100 rounded-t-none'>
                                     <li>
-                                        <a onClick={() => changeLanguage('en')}>English</a>
+                                        <a onClick={() => changeLanguage('en')}>{t('english')}</a>
                                     </li>
                                     <li>
-                                        <a onClick={() => changeLanguage('hu')}>Hungarian</a>
+                                        <a onClick={() => changeLanguage('hu')}>{t('hungarian')}</a>
                                     </li>
                                 </ul>
                             </details>
