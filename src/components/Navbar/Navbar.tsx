@@ -9,7 +9,8 @@ import { WiMoonWaningCrescent2 } from 'react-icons/wi';
 import React, { useContext, useEffect, useState } from 'react';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
+    const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
     const [isDark, setIsDark] = useState(true);
     const [theme, setTheme] = useState('');
     const t = useTranslation();
@@ -21,7 +22,11 @@ const Navbar = () => {
     }, []);
 
     const handleOpenHamburgerMenu = () => {
-        setIsOpen(!isOpen);
+        setIsHamburgerMenuOpen(!isHamburgerMenuOpen);
+    };
+
+    const handleCloseHamburgerMenu = () => {
+        setIsHamburgerMenuOpen(false);
     };
 
     const handleStyleChange = () => {
@@ -33,6 +38,14 @@ const Navbar = () => {
             setTheme('light');
         }
         setIsDark(!isDark);
+    };
+
+    const handleOpenLanguageTab = () => {
+        setIsLanguageDropdownOpen(true);
+    };
+
+    const handleCloseLanguageTab = () => {
+        setIsLanguageDropdownOpen(true);
     };
 
     const { changeTheme } = useContext(ThemeContext);
@@ -51,7 +64,11 @@ const Navbar = () => {
                         </li>
 
                         <li>
-                            <details>
+                            <details
+                                tabIndex={0}
+                                open={isLanguageDropdownOpen}
+                                onBlur={handleCloseLanguageTab}
+                                onClick={handleOpenLanguageTab}>
                                 <summary>{t('languages')}</summary>
                                 <ul className='p-2 bg-base-100 rounded-t-none'>
                                     <li>
@@ -89,7 +106,7 @@ const Navbar = () => {
                     />
                 </div>
 
-                {isOpen && (
+                {isHamburgerMenuOpen && (
                     <ul className='menu bg-base-200 rounded-box'>
                         <li>
                             <a>{t('projects')}</a>
@@ -97,7 +114,7 @@ const Navbar = () => {
 
                         <li>
                             <details>
-                                <summary>{t('languages')}</summary>
+                                <summary tabIndex={0}>{t('languages')}</summary>
                                 <ul className='p-2 bg-base-100 rounded-t-none'>
                                     <li>
                                         <a onClick={() => changeLanguage('en')}>{t('english')}</a>
