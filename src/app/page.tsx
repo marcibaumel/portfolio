@@ -9,6 +9,7 @@ export default function Home() {
         <>
             <div className='h-screen'>
                 <h1>{t('greeting')}</h1>
+                <div>CV content</div>
             </div>
         </>
     );

@@ -19,7 +19,8 @@ export const useTranslation = () => {
                     console.error(`Failed to load translation ${currentLanguage}`);
                 }
             } catch (error) {
-                console.error(`Error: ${error}`);
+                //console.error(`Error: ${error}`);
+                return;
             }
         };
 
