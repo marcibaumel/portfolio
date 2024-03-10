@@ -3,7 +3,7 @@ import React from 'react';
 const page = () => {
     return (
         <>
-            <div className='hidden xl:flex'>
+            <div className=''>
                 <ul className='timeline items-center justify-center text-center'>
                     <li>
                         <div className='timeline-start'>2017</div>
