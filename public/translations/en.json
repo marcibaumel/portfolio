@@ -12,6 +12,7 @@
     "drivingLicense": "Driving License Category B",
     "university": "University of Miskolc Computer Science Engineering",
     "master": "Master Degree",
+    
     "evoJuniorSD": "Evosoft Junior Software Developer",
     "evoJuniorSDAbout": "My primary responsibility involved constructing a stable and maintainable codebase using React, Typescript, and C#/ASP .NET . I oversaw version control using GIT and managed databases using SQL and MSSQL. Additionally , I actively contributed to Scrum-based project development.",
     "evoScholarship": "Evosoft evoCampus Scholarship",
