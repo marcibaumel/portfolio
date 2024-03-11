@@ -5,7 +5,7 @@ import VerticalItem from './EducationTimelineComponents/Verticaltem';
 const EducationTimeline = () => {
     return (
         <div>
-            <div className='hidden xl:flex items-center justify-center text-center'>
+            <div className='hidden 2xl:flex items-center justify-center text-center'>
                 <ul className='timeline items-center justify-center text-center'>
                     <HorizontalItem
                         title='English Language Exam Certificate B2'
@@ -13,7 +13,7 @@ const EducationTimeline = () => {
                         filledEnd
                     />
                     <HorizontalItem
-                        title='Bocskai István Catholic High School and Vocational School'
+                        title='Bocskai István Catholic High School'
                         year='2019'
                         filledEnd
                         filledStart
@@ -33,12 +33,11 @@ const EducationTimeline = () => {
                     <HorizontalItem
                         title='Master Degree'
                         year='2024'
-                        filledStart
                     />
                 </ul>
             </div>
 
-            <div className='xl:hidden'>
+            <div className='2xl:hidden'>
                 <ul className='timeline timeline-vertical'>
                     <VerticalItem
                         year='2018'

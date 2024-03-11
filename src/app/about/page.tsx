@@ -51,7 +51,7 @@ const page = () => {
                             <time className='font-mono italic'>2021-2024</time>
                             <div className='text-lg font-black'>Evosoft evoCampus Scholarship</div>
                             During my university studies, I participated in the evoCampus scholarship program initiated
-                            b y Evosoft for five semesters. My main responsibility was to create a project each semester
+                            by Evosoft for five semesters. My main responsibility was to create a project each semester
                             in collaboration with my team and mentors. A t the end of each semester, we presented the
                             projects to the employees of the company, who provided valuable feedback.
                         </div>
