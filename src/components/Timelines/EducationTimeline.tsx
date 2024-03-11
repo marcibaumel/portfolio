@@ -1,6 +1,6 @@
 import React from 'react';
-import HorizontalItem from './EducationTimelineComponents/HorizontalItem';
-import VerticalItem from './EducationTimelineComponents/Verticaltem';
+import HorizontalItem from './EducationTimelineElements/HorizontalItem';
+import VerticalItem from './EducationTimelineElements/Verticaltem';
 
 const EducationTimeline = () => {
     return (
