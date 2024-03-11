@@ -3,122 +3,210 @@ import React from 'react';
 const page = () => {
     return (
         <>
-            <div className=''>
-                <ul className='timeline items-center justify-center text-center'>
-                    <li>
-                        <div className='timeline-start'>2017</div>
-                        <div className='timeline-middle'>
-                            <svg
-                                xmlns='http://www.w3.org/2000/svg'
-                                viewBox='0 0 20 20'
-                                fill='currentColor'
-                                className='w-5 h-5'>
-                                <path
-                                    fillRule='evenodd'
-                                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
-                                    clipRule='evenodd'
-                                />
-                            </svg>
-                        </div>
-                        <div className='timeline-end timeline-box'>
-                            English Language Exam Certificate
-                            <br />
-                            B2 Combined
-                        </div>
-                        <hr className='bg-primary' />
-                    </li>
-                    <li>
-                        <hr className='bg-primary' />
-                        <div className='timeline-start'>2019</div>
-                        <div className='timeline-middle'>
-                            <svg
-                                xmlns='http://www.w3.org/2000/svg'
-                                viewBox='0 0 20 20'
-                                fill='currentColor'
-                                className='w-8 h-8'>
-                                <path
-                                    fillRule='evenodd'
-                                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
-                                    clipRule='evenodd'
-                                />
-                            </svg>
-                        </div>
-                        <div className='timeline-end timeline-box'>
-                            Bocskai István Catholic High School
-                            <br />
-                            and Vocational School
-                        </div>
-                        <hr className='bg-primary' />
-                    </li>
-                    <li>
-                        <hr className='bg-primary' />
-                        <div className='timeline-start'>2020</div>
-                        <div className='timeline-middle'>
-                            <svg
-                                xmlns='http://www.w3.org/2000/svg'
-                                viewBox='0 0 20 20'
-                                fill='currentColor'
-                                className='w-5 h-5'>
-                                <path
-                                    fillRule='evenodd'
-                                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
-                                    clipRule='evenodd'
-                                />
-                            </svg>
-                        </div>
-                        <div className='timeline-end timeline-box'>
-                            Driving License
-                            <br />
-                            Category B
-                        </div>
-                        <hr className='bg-primary' />
-                    </li>
-                    <li>
-                        <hr className='bg-primary' />
-                        <div className='timeline-start'>2024</div>
-                        <div className='timeline-middle'>
-                            <svg
-                                xmlns='http://www.w3.org/2000/svg'
-                                viewBox='0 0 20 20'
-                                fill='currentColor'
-                                className='w-10 h-10'>
-                                <path
-                                    fillRule='evenodd'
-                                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
-                                    clipRule='evenodd'
-                                />
-                            </svg>
-                        </div>
-                        <div className='timeline-end timeline-box'>
-                            University of Miskolc
-                            <br />
-                            Computer Science Engineering
-                        </div>
-                        <hr className='bg-primary' />
-                    </li>
-                    <li>
-                        <hr />
-                        <div className='timeline-start'></div>
-                        <div className='timeline-middle'>
-                            <svg
-                                xmlns='http://www.w3.org/2000/svg'
-                                viewBox='0 0 20 20'
-                                fill='currentColor'
-                                className='w-5 h-5'>
-                                <path
-                                    fillRule='evenodd'
-                                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
-                                    clipRule='evenodd'
-                                />
-                            </svg>
-                        </div>
-                        <div className='timeline-end timeline-box'>Master Degree</div>
-                        <hr />
-                    </li>
-                </ul>
+            <div>
+                <div className='hidden xl:flex items-center justify-center text-center'>
+                    <ul className='timeline items-center justify-center text-center'>
+                        <li>
+                            <div className='timeline-start'>2017</div>
+                            <div className='timeline-middle'>
+                                <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    viewBox='0 0 20 20'
+                                    fill='currentColor'
+                                    className='w-5 h-5'>
+                                    <path
+                                        fillRule='evenodd'
+                                        d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                                        clipRule='evenodd'
+                                    />
+                                </svg>
+                            </div>
+                            <div className='timeline-end timeline-box'>
+                                English Language Exam Certificate
+                                <br />
+                                B2 Combined
+                            </div>
+                            <hr className='bg-primary' />
+                        </li>
+                        <li>
+                            <hr className='bg-primary' />
+                            <div className='timeline-start'>2019</div>
+                            <div className='timeline-middle'>
+                                <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    viewBox='0 0 20 20'
+                                    fill='currentColor'
+                                    className='w-8 h-8'>
+                                    <path
+                                        fillRule='evenodd'
+                                        d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                                        clipRule='evenodd'
+                                    />
+                                </svg>
+                            </div>
+                            <div className='timeline-end timeline-box'>
+                                Bocskai István Catholic High School
+                                <br />
+                                and Vocational School
+                            </div>
+                            <hr className='bg-primary' />
+                        </li>
+                        <li>
+                            <hr className='bg-primary' />
+                            <div className='timeline-start'>2020</div>
+                            <div className='timeline-middle'>
+                                <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    viewBox='0 0 20 20'
+                                    fill='currentColor'
+                                    className='w-5 h-5'>
+                                    <path
+                                        fillRule='evenodd'
+                                        d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                                        clipRule='evenodd'
+                                    />
+                                </svg>
+                            </div>
+                            <div className='timeline-end timeline-box'>
+                                Driving License
+                                <br />
+                                Category B
+                            </div>
+                            <hr className='bg-primary' />
+                        </li>
+                        <li>
+                            <hr className='bg-primary' />
+                            <div className='timeline-start'>2024</div>
+                            <div className='timeline-middle'>
+                                <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    viewBox='0 0 20 20'
+                                    fill='currentColor'
+                                    className='w-10 h-10'>
+                                    <path
+                                        fillRule='evenodd'
+                                        d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                                        clipRule='evenodd'
+                                    />
+                                </svg>
+                            </div>
+                            <div className='timeline-end timeline-box'>
+                                University of Miskolc
+                                <br />
+                                Computer Science Engineering
+                            </div>
+                            <hr className='bg-primary' />
+                        </li>
+                        <li>
+                            <hr />
+                            <div className='timeline-start'></div>
+                            <div className='timeline-middle'>
+                                <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    viewBox='0 0 20 20'
+                                    fill='currentColor'
+                                    className='w-5 h-5'>
+                                    <path
+                                        fillRule='evenodd'
+                                        d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                                        clipRule='evenodd'
+                                    />
+                                </svg>
+                            </div>
+                            <div className='timeline-end timeline-box'>Master Degree</div>
+                            <hr />
+                        </li>
+                    </ul>
+                </div>
+
+                <div className='xl:hidden'>
+                    <ul className='timeline timeline-vertical'>
+                        <li>
+                            <div className='timeline-start'>2017</div>
+                            <div className='timeline-middle'>
+                                <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    viewBox='0 0 20 20'
+                                    fill='currentColor'
+                                    className='w-5 h-5'>
+                                    <path
+                                        fillRule='evenodd'
+                                        d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                                        clipRule='evenodd'
+                                    />
+                                </svg>
+                            </div>
+                            <div className='timeline-end timeline-box'>
+                                English Language Exam Certificate B2 Combined
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div className='timeline-start'>2019</div>
+                            <div className='timeline-middle'>
+                                <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    viewBox='0 0 20 20'
+                                    fill='currentColor'
+                                    className='w-7 h-7'>
+                                    <path
+                                        fillRule='evenodd'
+                                        d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                                        clipRule='evenodd'
+                                    />
+                                </svg>
+                            </div>
+                            <div className='timeline-end timeline-box'>
+                                Bocskai István Catholic High School and Vocational School
+                            </div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div className='timeline-start'>2020</div>
+                            <div className='timeline-middle'>
+                                <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    viewBox='0 0 20 20'
+                                    fill='currentColor'
+                                    className='w-5 h-5'>
+                                    <path
+                                        fillRule='evenodd'
+                                        d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                                        clipRule='evenodd'
+                                    />
+                                </svg>
+                            </div>
+                            <div className='timeline-end timeline-box'>Driving License Category B</div>
+                            <hr />
+                        </li>
+                        <li>
+                            <hr />
+                            <div className='timeline-start'>2024</div>
+                            <div className='timeline-middle'>
+                                <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    viewBox='0 0 20 20'
+                                    fill='currentColor'
+                                    className='w-7 h-7'>
+                                    <path
+                                        fillRule='evenodd'
+                                        d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                                        clipRule='evenodd'
+                                    />
+                                </svg>
+                            </div>
+                            <div className='timeline-end timeline-box'>
+                                University of Miskolc Computer Science Engineering
+                            </div>
+                            <hr />
+                        </li>
+                    </ul>
+                </div>
             </div>
+
             <div className='mx-3'>
-               
                 <ul className='timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mx-5 pt-10'>
                     <li>
                         <div className='timeline-middle'>
