@@ -5,5 +5,19 @@
     "languages": "Languages",
     "english": "English",
     "hungarian": "Hungarian",
-    "about": "About"
-  }
+    "about": "About",
+    
+    "englishLanguageB2": "English Language Exam Certificate B2",
+    "bocskai": "Bocskai István Catholic High School",
+    "drivingLicense": "Driving License Category B",
+    "university": "University of Miskolc Computer Science Engineering",
+    "master": "Master Degree",
+    "evoJuniorSD": "Evosoft Junior Software Developer",
+    "evoJuniorSDAbout": "My primary responsibility involved constructing a stable and maintainable codebase using React, Typescript, and C#/ASP .NET . I oversaw version control using GIT and managed databases using SQL and MSSQL. Additionally , I actively contributed to Scrum-based project development.",
+    "evoScholarship": "Evosoft evoCampus Scholarship",
+    "evoScholarshipAbout": "During my university studies, I participated in the evoCampus scholarship program initiated by Evosoft for five semesters. My main responsibility was to reate a project each semester in collaboration with my team and mentors. A t the end of each semester, we presented the projects to the employees of the company, who provided valuable feedback.",
+    "hsup": "Hungarian Startup University Program",
+    "hsupAbout": "With my team, our task was to simulate a regular startup company with an end-to-end product. My role was to design and develop the website and manage the tasks with Trello.",
+    "erasmus": "Erasmus+",
+    "erasmusAbout": "I participated in this program and had the chance to travel to Turkey with my classmates to enhance my language skills and establish international connections. My responsibility was to deliver a presentation about Hungary and edit our promotional video."
+}
