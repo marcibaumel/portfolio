@@ -5,5 +5,19 @@
     "languages": "Nyelvek",
     "english": "Angol",
     "hungarian": "Magyar",
-    "about": "Magamról"
-  }
+    "about": "Rólam",
+
+    "englishLanguageB2": "Angol B2 Komplex Nyelvvizsga",
+    "bocskai": "Bocskai István Katolikus Gimnázium",
+    "drivingLicense": "B Kategóriás Jogosítvány",
+    "university": "Miskolci Egyetem Mérnökinformatikus Alapképzés",
+    "master": "Mester Képzés",
+    "evoJuniorSD": "Evosoft Junior Szoftver Fejlesztő",
+    "evoJuniorSDAbout": "Az elsődleges feladatom a React, Typescript és C#/ASP.NET felhasználásával stabil és karbantartható webalkalmazások létrehozása volt. A Git-et és Azure DevOps-et használtam verziókezelésre, és az relációs adatbázist az MSSQL segítségével kezeltem. Emellett aktívan részt vettem egy Scrum alapú csapatban",
+    "evoScholarship": "Evosoft evoCampus Ösztöndíj",
+    "evoScholarshipAbout": "Egyetemi tanulmányaim alatt öt féléven keresztül részt vettem az Evosoft által létrehozott evoCampus ösztöndíjprogramban. Fő feladatom az volt, hogy minden félévben egy projektet létre kellett hozzunk csapatommal és mentoraimmal együttműködve. Emellett minden félév végén bemutattuk az elkészültt projekteket a cég munkatársainak, akik értékes visszajelzésekkel szolgáltak",
+    "hsup": "Hungarian Startup University Program",
+    "hsupAbout": "A csapatommal az volt a feladatunk, hogy szimuláljunk egy rendes startup céget egy termék kifejlesztésével. Az én feladatom volt a termékhez kapcsolódó weboldal tervezése és fejlesztése, valamint a feladatok kezelése a Trello-val.",
+    "erasmus": "Erasmus+",
+    "erasmusAbout": "Ebben a programban lehetőségem nyílt Törökországba utazni osztálytársaimmal, hogy fejleszthessük a nyelvtudásunkat és nemzetközi kapcsolatokat tudjunk ki építeni. Az én feladatom az volt, hogy előadást tartsak Magyarországról, és megszerkesszem a promóciós videónkat"
+}

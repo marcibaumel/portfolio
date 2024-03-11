@@ -12,7 +12,6 @@ import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
     const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
-    const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
     const [isDark, setIsDark] = useState(true);
     const [theme, setTheme] = useState('');
     const dropdownRef = useRef(null);
@@ -37,10 +36,6 @@ const Navbar = () => {
             setTheme('light');
         }
         setIsDark(!isDark);
-    };
-
-    const toggleOpenLanguageTab = () => {
-        setIsLanguageDropdownOpen(false);
     };
 
     const { changeTheme } = useContext(ThemeContext);
