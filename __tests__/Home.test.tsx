@@ -10,6 +10,6 @@ it('Should have CV text ', () => {
             <Home />
         </ClientThemeWrapper>
     </ThemeProvider>)
-    const myElem = screen.getByText('CV content');
+    const myElem = screen.getByText('React');
     expect(myElem).toBeInTheDocument()
 })
