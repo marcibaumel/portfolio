@@ -88,7 +88,11 @@ const Navbar = () => {
                 <div className='md:hidden'>
                     <div className='text-center'>
                         <div>
-                            <a className='btn btn-ghost text-xl'>Baumel Márton</a>
+                            <a
+                                className='btn btn-ghost text-xl'
+                                onClick={() => router.push('/')}>
+                                Baumel Márton
+                            </a>
                         </div>
 
                         <GiHamburgerMenu
