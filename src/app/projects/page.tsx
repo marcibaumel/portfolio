@@ -1,44 +1,52 @@
+'use client'
+
 import ProjectCard from '@/components/ProjectCard/ProjectCard';
+import { useTranslation } from '@/contexts/LanguageContext';
 import React from 'react';
 
-const page = () => {
+export default function Projects() {
+    const t = useTranslation();
     return (
-        <div className='m-5'>
-            <div className='text-lg font-semibold'>Finished projects:</div>
-            <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 justify-items-center text-center pt-10'>
-                <ProjectCard
-                    description='INSERT TEXT LATER'
-                    link='https://github.com/marcibaumel/evoSmartHome_copy'
-                    title='evoSmartHome - 2024'
-                />
+        <div className='m-5 pb-10'>
+            <div>
+                <div className='text-2xl font-semibold text-center'>{t('ongoingProjects')}</div>
+                <div className='h-40'></div>
+            </div>
+            <div>
+                <div className='text-2xl font-semibold text-center'>{t('finishedProjects')}</div>
+                <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 justify-items-center text-center pt-10'>
+                    <ProjectCard
+                        description='evoSmartHomeDescription'
+                        link='https://github.com/marcibaumel/evoSmartHome_copy'
+                        title='evoSmartHome'
+                    />
 
-                <ProjectCard
-                    description='With my team, our task was to simulate a regular startup company with an end-to-end product. My role was to design and develop the website and manage the tasks with Trello'
-                    imgName='hsup_logo.png'
-                    link='https://marcibaumel.github.io/HSUP_WEB/'
-                    title='Sweetch - 2022'
-                />
+                    <ProjectCard
+                        description='sweetchDescription'
+                        imgName='hsup_logo.png'
+                        link='https://marcibaumel.github.io/HSUP_WEB/'
+                        title='sweetch'
+                    />
 
-                <ProjectCard
-                    description='INSERT TEXT LATER'
-                    link='https://github.com/BalintSedlak/EvoNaplo'
-                    title='evoNaplo - 2021'
-                />
+                    <ProjectCard
+                        description='evoNaploDescription'
+                        link='https://github.com/BalintSedlak/EvoNaplo'
+                        title='evoNaplo'
+                    />
 
-                <ProjectCard
-                    description='Szoftvertechnológia c. tárgy (GEIAL314B kurzus)-hoz tartozó beadandó feladat '
-                    link='https://github.com/marcibaumel/SpeedCards'
-                    title='SpeedCards - 2020'
-                />
+                    <ProjectCard
+                        description='speedCardsDescription'
+                        link='https://github.com/marcibaumel/SpeedCards'
+                        title='speedCards'
+                    />
 
-                <ProjectCard
-                    description='This project was made in 2020 first half, it was a student project with classmates part of the EvoCampus program. Our task was to make a game with WPF. It was my first time when I had to use WPF and the first time I had to code in C# (before that I had experience programming in C and JAVA (and a little bit of Python and Pascal)).'
-                    link='https://github.com/marcibaumel/EvoRPG_2020'
-                    title='evoRPG - 2020'
-                />
+                    <ProjectCard
+                        description='evoRpgDescription'
+                        link='https://github.com/marcibaumel/EvoRPG_2020'
+                        title='evoRpg'
+                    />
+                </div>
             </div>
         </div>
     );
-};
-
-export default page;
+}

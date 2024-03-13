@@ -19,5 +19,18 @@
     "hsup": "Hungarian Startup University Program",
     "hsupAbout": "A csapatommal az volt a feladatunk, hogy szimuláljunk egy rendes startup céget egy termék kifejlesztésével. Az én feladatom volt a termékhez kapcsolódó weboldal tervezése és fejlesztése, valamint a feladatok kezelése a Trello-val.",
     "erasmus": "Erasmus+",
-    "erasmusAbout": "Ebben a programban lehetőségem nyílt Törökországba utazni osztálytársaimmal, hogy fejleszthessük a nyelvtudásunkat és nemzetközi kapcsolatokat tudjunk ki építeni. Az én feladatom az volt, hogy előadást tartsak Magyarországról, és megszerkesszem a promóciós videónkat"
+    "erasmusAbout": "Ebben a programban lehetőségem nyílt Törökországba utazni osztálytársaimmal, hogy fejleszthessük a nyelvtudásunkat és nemzetközi kapcsolatokat tudjunk ki építeni. Az én feladatom az volt, hogy előadást tartsak Magyarországról, és megszerkesszem a promóciós videónkat",
+
+    "ongoingProjects":"Aktuális Projektek:",
+    "finishedProjects":"Befejezett Projektek:",
+    "evoSmartHome": "evoSmartHome - 2024",
+    "evoSmartHomeDescription": "Az evoSmartHome egy okos otthon webalkalmazás, melynek segítségével felhasználók vezérelhetik és monitorozhatják otthonuk eszközeit. Az alkalmazás fejlesztése során MQTT, Python/uvicorn és az első verziónál React/ Typescript/ PWA technológiákat használtunk. Azonban a második félévben a fejlesztést Next.js-el folytattuk.",
+    "sweetch": "Sweetch - 2022",
+    "sweetchDescription": "A csapatommal az volt a feladatunk, hogy szimuláljunk egy rendes startup céget egy termék  kifejlesztésével. Az én feladatom volt a termékhez kapcsolódó weboldal tervezése és fejlesztése, valamint a feladatok kezelése a Trello-val.",
+    "evoNaplo": "evoNaplo - 2021",
+    "evoNaploDescription": "Az evoNaplo egy alkalmazás, melyet az evoCampus óráinak nyomon követésére terveztünk. A célja az volt, hogy egyszerűvé tegye az órákra való jelentkezést és nyomon követését. A technológiák között C# és React/Typescript szerepelt.",
+    "speedCards": "SpeedCards (Szoftvertechnológia c. tárgy (GEIAL314B kurzus)-hoz tartozó beadandó feladat) - 2020",
+    "speedCardsDescription": "A programunk különböző kártya- és játékmechanikákból merít inspirációt, például a Gwent és a Yu-Gi-Oh! játékokból. A StarCraft RTS játék témája adja az alapokat. A játék főként taktikai gondolkodást igényel, mivel nincsenek konkrét egységek, csak az előre lerakott kártyák befolyásolják a játékmenetet. A fejlesztés Java és JavaFX technológiákkal történt.",
+    "evoRpg": "evoRPG - 2020",
+    "evoRpgDescription": "Ez a projekt 2020-ban készült el az EvoCampus program részeként. A feladatunk az volt, hogy egy játékot készítsünk WPF segítségével. Ez volt az első alkalom, hogy használnom kellett a WPF-et, és az első alkalom, hogy C#-ban kellett kódot írnom."
 }
