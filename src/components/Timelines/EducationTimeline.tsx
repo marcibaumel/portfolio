@@ -1,15 +1,21 @@
-'use client'
+'use client';
 
 import React from 'react';
 import HorizontalItem from './EducationTimelineElements/HorizontalItem';
 import VerticalItem from './EducationTimelineElements/Verticaltem';
 import { useTranslation } from '@/contexts/LanguageContext';
+import { motion } from 'framer-motion';
 
 const EducationTimeline = () => {
     const t = useTranslation();
 
     return (
-        <div>
+        <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{
+                delay: 0.3,
+            }}>
             <div className='hidden 2xl:flex items-center justify-center text-center'>
                 <ul className='timeline items-center justify-center text-center'>
                     <HorizontalItem
@@ -62,7 +68,7 @@ const EducationTimeline = () => {
                     />
                 </ul>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

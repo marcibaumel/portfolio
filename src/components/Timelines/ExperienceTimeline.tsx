@@ -3,13 +3,20 @@
 import React from 'react';
 import ExperienceTimelineElement from './ExperienceTimelineElements/ExperienceTimelineElement';
 import { useTranslation } from '@/contexts/LanguageContext';
+import { motion } from 'framer-motion';
 
 const ExperienceTimeline = () => {
     const t = useTranslation();
 
     return (
         <>
-            <div className='mx-3'>
+            <motion.div
+                className='mx-3'
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{
+                    delay: 0.3,
+                }}>
                 <ul className='timeline timeline-snap-icon max-md:timeline-compact timeline-vertical mx-5 pt-10'>
                     <ExperienceTimelineElement
                         positionLeft
@@ -34,7 +41,7 @@ const ExperienceTimeline = () => {
                         year='2018'
                     />
                 </ul>
-            </div>
+            </motion.div>
         </>
     );
 };
