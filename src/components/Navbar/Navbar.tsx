@@ -9,6 +9,7 @@ import { WiMoonWaningCrescent2 } from 'react-icons/wi';
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import LanguageDropdown from '../LanguageDropdown/LanguageDropdown';
 import { useRouter } from 'next/navigation';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
     const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
@@ -40,65 +41,39 @@ const Navbar = () => {
 
     const { changeTheme } = useContext(ThemeContext);
     const { changeLanguage } = useContext(ThemeContext);
-    const router = useRouter()
+    const router = useRouter();
 
     return (
-        <div
-            className='mb-4'
-            ref={dropdownRef}>
-            <div className={`navbar hidden md:flex`}>
-                <div className='flex-1' onClick={() => router.push('/')}>
-                    <a className='btn btn-ghost text-xl'>Baumel Márton</a>
-                </div>
-                <div className='flex-none'>
-                    <ul className='menu menu-horizontal px-1'>
-                    <li>
-                            <a onClick={() => router.push('/about')}>{t('about')}</a>
-                        </li>
-                        <li>
-                            <a onClick={() => router.push('/projects')}>{t('projects')}</a>
-                        </li>
-
-                        <li>
-                            <LanguageDropdown
-                                isLarge
-                                changeLanguage={changeLanguage}
-                            />
-                        </li>
-                        <li>
-                            <a onClick={handleStyleChange}>
-                                {theme === 'light' ? (
-                                    <WiMoonWaningCrescent2 size={20} />
-                                ) : (
-                                    <TiAdjustBrightness size={20} />
-                                )}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className='md:hidden'>
-                <div className='text-center'>
-                    <div>
+        <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{
+                
+            }}>
+            <div
+                className='mb-4'
+                ref={dropdownRef}>
+                <div className={`navbar hidden md:flex`}>
+                    <div
+                        className='flex-1'
+                        onClick={() => router.push('/')}>
                         <a className='btn btn-ghost text-xl'>Baumel Márton</a>
                     </div>
-
-                    <GiHamburgerMenu
-                        className='m-4'
-                        size={30}
-                        onClick={toggleOpenHamburgerMenu}
-                    />
-                </div>
-
-                {isHamburgerMenuOpen && (
-                    <div>
-                        <ul className='menu bg-base-200 rounded-box'>
+                    <div className='flex-none'>
+                        <ul className='menu menu-horizontal px-1'>
                             <li>
-                                <a>{t('projects')}</a>
+                                <a onClick={() => router.push('/about')}>{t('about')}</a>
+                            </li>
+                            <li>
+                                <a onClick={() => router.push('/projects')}>{t('projects')}</a>
                             </li>
 
-                            <LanguageDropdown changeLanguage={changeLanguage} />
+                            <li>
+                                <LanguageDropdown
+                                    isLarge
+                                    changeLanguage={changeLanguage}
+                                />
+                            </li>
                             <li>
                                 <a onClick={handleStyleChange}>
                                     {theme === 'light' ? (
@@ -110,9 +85,44 @@ const Navbar = () => {
                             </li>
                         </ul>
                     </div>
-                )}
+                </div>
+
+                <div className='md:hidden'>
+                    <div className='text-center'>
+                        <div>
+                            <a className='btn btn-ghost text-xl'>Baumel Márton</a>
+                        </div>
+
+                        <GiHamburgerMenu
+                            className='m-4'
+                            size={30}
+                            onClick={toggleOpenHamburgerMenu}
+                        />
+                    </div>
+
+                    {isHamburgerMenuOpen && (
+                        <div>
+                            <ul className='menu bg-base-200 rounded-box'>
+                                <li>
+                                    <a>{t('projects')}</a>
+                                </li>
+
+                                <LanguageDropdown changeLanguage={changeLanguage} />
+                                <li>
+                                    <a onClick={handleStyleChange}>
+                                        {theme === 'light' ? (
+                                            <WiMoonWaningCrescent2 size={20} />
+                                        ) : (
+                                            <TiAdjustBrightness size={20} />
+                                        )}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    )}
+                </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
