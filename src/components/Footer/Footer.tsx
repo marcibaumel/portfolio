@@ -9,10 +9,10 @@ const Footer = () => {
 
     return (
         <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{
-                
+                delay: 1,
             }}>
             <div className='bottom-0 relative w-full pt-[250px]'>
                 <footer className='footer p-10 bg-neutral text-neutral-content'>

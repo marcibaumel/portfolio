@@ -45,8 +45,8 @@ const Navbar = () => {
 
     return (
         <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{
                 
             }}>

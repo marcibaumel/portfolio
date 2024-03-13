@@ -2,17 +2,29 @@
 
 import ProjectCard from '@/components/ProjectCard/ProjectCard';
 import { useTranslation } from '@/contexts/LanguageContext';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 export default function Projects() {
     const t = useTranslation();
     return (
         <div className='m-5 pb-10'>
-            <div>
+            <motion.div
+                className='mx-3'
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{
+                    delay: 0.3,
+                }}>
                 <div className='text-2xl font-semibold text-center'>{t('ongoingProjects')}</div>
                 <div className='h-40'></div>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div className='mx-3'
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{
+                    delay: 1,
+                }}>
                 <div className='text-2xl font-semibold text-center'>{t('finishedProjects')}</div>
                 <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 justify-items-center text-center pt-10'>
                     <ProjectCard
@@ -42,7 +54,7 @@ export default function Projects() {
                         title='evoRpg'
                     />
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }
