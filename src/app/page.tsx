@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 export default function Home() {
     const t = useTranslation();
-    const [textArray, setTextArray] = useState(['Hi!', 'Szia!', 'Guten Tag!', 'Hello!']);
+    const [textArray, setTextArray] = useState(['Hi!', 'Szia!', 'Hello!']);
 
     return (
         <>
@@ -20,13 +20,13 @@ export default function Home() {
                     delay: 0.7,
                 }}>
                 <div className='p-10'>
-                    <div className='text-[100px] font-black h-40'>
+                    <div className='text-[100px] font-black h-40 flex'>
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{
                                 stiffness: 100,
-                                delay: 3,
+                                delay: 2.5,
                             }}>
                             <Greeting
                                 texts={textArray}
