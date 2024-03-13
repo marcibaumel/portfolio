@@ -47,9 +47,7 @@ const Navbar = () => {
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{
-                
-            }}>
+            transition={{}}>
             <div
                 className='mb-4'
                 ref={dropdownRef}>
@@ -104,7 +102,10 @@ const Navbar = () => {
                         <div>
                             <ul className='menu bg-base-200 rounded-box'>
                                 <li>
-                                    <a>{t('projects')}</a>
+                                    <a onClick={() => router.push('/about')}>{t('about')}</a>
+                                </li>
+                                <li>
+                                    <a onClick={() => router.push('/projects')}>{t('projects')}</a>
                                 </li>
 
                                 <LanguageDropdown changeLanguage={changeLanguage} />
