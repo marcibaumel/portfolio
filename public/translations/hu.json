@@ -1,6 +1,12 @@
 {
     "greeting": "Szia!",
     "goodbye": "Csá",
+    "nickname":"Marci",
+    "myNameIs": "Én",
+    "makeThings": "vagyok és nagyon szeretek menőn kinéző dolgokat csinálni.",
+    "technologyWhatILike":"Ezeket a technológiákat nagyon kedvelem:",
+
+
     "projects": "Projektek",
     "languages": "Nyelvek",
     "english": "Angol",

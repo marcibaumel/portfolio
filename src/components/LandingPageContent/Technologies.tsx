@@ -1,9 +1,13 @@
+'use client';
+
+import { useTranslation } from '@/contexts/LanguageContext';
 import React from 'react';
 
 const Technologies = () => {
+    const t = useTranslation();
     return (
         <div className='pt-5'>
-            <div className='text-[20px] leading-tight font-light'>I really like these technologies:</div>
+            <div className='text-[20px] leading-tight font-light'>{t('technologyWhatILike')}</div>
             <div className='pt-5 m-3'>
                 <button className='btn btn-neutral m-3'>React</button>
                 <button className='btn btn-neutral m-3'>Next.js</button>
