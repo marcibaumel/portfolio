@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import ProjectCard from '@/components/ProjectCard/ProjectCard';
 import { useTranslation } from '@/contexts/LanguageContext';
@@ -20,26 +20,22 @@ export default function Projects() {
                         link='https://github.com/marcibaumel/evoSmartHome_copy'
                         title='evoSmartHome'
                     />
-
                     <ProjectCard
                         description='sweetchDescription'
                         imgName='hsup_logo.png'
                         link='https://marcibaumel.github.io/HSUP_WEB/'
                         title='sweetch'
                     />
-
                     <ProjectCard
                         description='evoNaploDescription'
                         link='https://github.com/BalintSedlak/EvoNaplo'
                         title='evoNaplo'
                     />
-
                     <ProjectCard
                         description='speedCardsDescription'
                         link='https://github.com/marcibaumel/SpeedCards'
                         title='speedCards'
                     />
-
                     <ProjectCard
                         description='evoRpgDescription'
                         link='https://github.com/marcibaumel/EvoRPG_2020'
