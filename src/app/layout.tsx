@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import StoreProvider from '@/store/StoreProvider';
 import ThemeProvider from '@/contexts/ThemeContext';
 import type { Metadata } from 'next';
+import Footer from '@/components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,12 +23,15 @@ export default function RootLayout({
         <StoreProvider>
             <html lang='en'>
                 <body className={inter.className}>
-                    <ThemeProvider>
-                        <ClientThemeWrapper>
-                            <Navbar />
-                            <div>{children}</div>
-                        </ClientThemeWrapper>
-                    </ThemeProvider>
+                    <div className='h-full'>
+                        <ThemeProvider>
+                            <ClientThemeWrapper>
+                                <Navbar />
+                                <div>{children}</div>
+                                <Footer />
+                            </ClientThemeWrapper>
+                        </ThemeProvider>
+                    </div>
                 </body>
             </html>
         </StoreProvider>
