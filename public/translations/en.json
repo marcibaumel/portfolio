@@ -6,13 +6,13 @@
     "english": "English",
     "hungarian": "Hungarian",
     "about": "About",
-    
+
     "englishLanguageB2": "English Language Exam Certificate B2",
     "bocskai": "Bocskai István Catholic High School",
     "drivingLicense": "Driving License Category B",
     "university": "University of Miskolc Computer Science Engineering",
     "master": "Master Degree",
-    
+
     "evoJuniorSD": "Evosoft Junior Software Developer",
     "evoJuniorSDAbout": "My primary responsibility involved constructing a stable and maintainable codebase using React, Typescript, and C#/ASP .NET . I oversaw version control using GIT and managed databases using SQL and MSSQL. Additionally , I actively contributed to Scrum-based project development.",
     "evoScholarship": "Evosoft evoCampus Scholarship",
@@ -20,5 +20,18 @@
     "hsup": "Hungarian Startup University Program",
     "hsupAbout": "With my team, our task was to simulate a regular startup company with an end-to-end product. My role was to design and develop the website and manage the tasks with Trello.",
     "erasmus": "Erasmus+",
-    "erasmusAbout": "I participated in this program and had the chance to travel to Turkey with my classmates to enhance my language skills and establish international connections. My responsibility was to deliver a presentation about Hungary and edit our promotional video."
+    "erasmusAbout": "I participated in this program and had the chance to travel to Turkey with my classmates to enhance my language skills and establish international connections. My responsibility was to deliver a presentation about Hungary and edit our promotional video.",
+
+    "ongoingProjects":"Ongoing Projects:",
+    "finishedProjects":"Finished Projects:",
+    "evoSmartHome": "evoSmartHome - 2024",
+    "evoSmartHomeDescription": "The evoSmartHome is a smart home web application that allows users to control and monitor their home devices. During the development of the application, we used MQTT, Python/uvicorn, and in the first version we used React/ Typescript/ PWA technologies. In the second half of the development, we continued with Next.js.",
+    "sweetch": "Sweetch - 2022",
+    "sweetchDescription": "With my team, our task was to simulate a regular startup company with an end-to-end product. My role was to design and develop the website and manage the tasks with Trello",
+    "evoNaplo": "evoNaplo - 2021",
+    "evoNaploDescription": "The evoNaplo is an application designed for tracking evoCampus classes. Its purpose was to simplify class registration and tracking. Among the technologies used were C# and React/Typescript.",
+    "speedCards": "SpeedCards (Szoftvertechnológia c. tárgy (GEIAL314B kurzus)-hoz tartozó beadandó feladat) - 2020",
+    "speedCardsDescription": "Our program draws inspiration from various card and game mechanics, such as those found in the Gwent and Yu-Gi-Oh! games. The theme of the StarCraft RTS game provides the foundation. The game mainly requires tactical thinking, as there are no specific units; only the pre-placed cards influence the gameplay. The development was done using Java and JavaFX technologies.",
+    "evoRpg": "evoRPG - 2020",
+    "evoRpgDescription": "This project was made in 2020, it was a student project with classmates part of the EvoCampus program. Our task was to make a game with WPF. It was my first time when I had to use WPF and the first time I had to code in C#."
 }
