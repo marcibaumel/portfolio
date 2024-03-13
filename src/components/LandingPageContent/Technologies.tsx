@@ -1,12 +1,18 @@
 'use client';
 
 import { useTranslation } from '@/contexts/LanguageContext';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 const Technologies = () => {
     const t = useTranslation();
     return (
-        <div className='pt-5'>
+        <motion.div className='pt-5'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+            delay: 1.2,
+        }}>
             <div className='text-[20px] leading-tight font-light'>{t('technologyWhatILike')}</div>
             <div className='pt-5 m-3'>
                 <button className='btn btn-neutral m-3'>React</button>
@@ -28,7 +34,7 @@ const Technologies = () => {
                 <button className='btn btn-neutral m-3'>Git</button>
                 <button className='btn btn-neutral m-3'>SQL</button>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
