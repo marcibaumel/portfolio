@@ -26,7 +26,7 @@ export default function Projects() {
                     delay: 1,
                 }}>
                 <div className='text-2xl font-semibold text-center'>{t('finishedProjects')}</div>
-                <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 justify-items-center text-center pt-10'>
+                <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 justify-items-center pt-10 text-justify'>
                     <ProjectCard
                         description='evoSmartHomeDescription'
                         link='https://github.com/marcibaumel/evoSmartHome_copy'
@@ -34,7 +34,6 @@ export default function Projects() {
                     />
                     <ProjectCard
                         description='sweetchDescription'
-                        imgName='hsup_logo.png'
                         link='https://marcibaumel.github.io/HSUP_WEB/'
                         title='sweetch'
                     />
