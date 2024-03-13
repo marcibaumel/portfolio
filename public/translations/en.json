@@ -1,6 +1,11 @@
 {
     "greeting": "Hi!",
     "goodbye": "Goodbye",
+    "nickname":"Marci",
+    "myNameIs": "My name is",
+    "makeThings": "and I love make cool looking things!",
+    "technologyWhatILike": "I really like these technologies:",
+
     "projects": "Projects",
     "languages": "Languages",
     "english": "English",
