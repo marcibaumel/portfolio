@@ -1,10 +1,11 @@
 import { IVerticalItem } from '@/@types/IVerticalItem';
 import React from 'react';
 
-const VerticalItem = ({ year, title }: IVerticalItem) => {
+const VerticalItem = ({ year, title, finishLine, startLine }: IVerticalItem) => {
     return (
         <>
             <li>
+                {startLine && <hr/>}
                 <div className='timeline-start'>{year}</div>
                 <div className='timeline-middle'>
                     <svg
@@ -20,7 +21,7 @@ const VerticalItem = ({ year, title }: IVerticalItem) => {
                     </svg>
                 </div>
                 <div className='timeline-end timeline-box'>{title}</div>
-                <hr />
+                {finishLine && <hr/>}
             </li>
         </>
     );

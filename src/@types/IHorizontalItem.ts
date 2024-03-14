@@ -3,4 +3,6 @@ export interface IHorizontalItem {
     title: string;
     filledStart?: boolean;
     filledEnd?: boolean;
+    startLine?: boolean;
+    finishLine?: boolean;
 }

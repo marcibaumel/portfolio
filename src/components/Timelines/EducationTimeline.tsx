@@ -22,28 +22,30 @@ const EducationTimeline = () => {
                         title={t('englishLanguageB2')}
                         year='2017'
                         filledEnd
+                        finishLine
                     />
                     <HorizontalItem
                         title={t('bocskai')}
                         year='2019'
                         filledEnd
                         filledStart
+                        startLine
+                        finishLine
                     />
                     <HorizontalItem
                         title={t('drivingLicense')}
                         year='2020'
                         filledEnd
                         filledStart
+                        startLine
+                        finishLine
                     />
                     <HorizontalItem
                         title={t('university')}
                         year='2024'
                         filledEnd
                         filledStart
-                    />
-                    <HorizontalItem
-                        title={t('master')}
-                        year=''
+                        startLine
                     />
                 </ul>
             </div>

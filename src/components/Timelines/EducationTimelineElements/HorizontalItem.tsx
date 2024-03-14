@@ -1,11 +1,11 @@
 import { IHorizontalItem } from '@/@types/IHorizontalItem';
 import React from 'react';
 
-const HorizontalItem = ({ year, title, filledStart, filledEnd }: IHorizontalItem) => {
+const HorizontalItem = ({ year, title, filledStart, filledEnd, finishLine, startLine }: IHorizontalItem) => {
     return (
         <>
             <li>
-                <hr className={`${filledStart && 'bg-primary'}`} />
+                {startLine && <hr className={`${filledStart && 'bg-primary'}`} />}
                 <div className='timeline-start'>{year}</div>
                 <div className='timeline-middle'>
                     <svg
@@ -21,7 +21,7 @@ const HorizontalItem = ({ year, title, filledStart, filledEnd }: IHorizontalItem
                     </svg>
                 </div>
                 <div className='timeline-end timeline-box'>{title}</div>
-                <hr className={`${filledEnd && 'bg-primary'}`} />
+                {finishLine && <hr className={`${filledEnd && 'bg-primary'}`} />}
             </li>
         </>
     );
