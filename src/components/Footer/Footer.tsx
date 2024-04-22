@@ -27,23 +27,11 @@ const Footer = () => {
                     <nav>
                         <h6 className='footer-title'>{t('social')}</h6>
                         <div className='grid grid-flow-col gap-4'>
-                            <a href='https://twitter.com/bau_tweets'>
-                                <FaSquareXTwitter size={24} />
-                            </a>
                             <a href='https://www.linkedin.com/in/marton-baumel/'>
                                 <FaLinkedin size={24} />
                             </a>
                             <a href='https://github.com/marcibaumel'>
                                 <FaGithub size={24} />
-                            </a>
-                            <a href='https://www.youtube.com/@bau_videos'>
-                                <FaYoutube size={24} />
-                            </a>
-                            <a href='https://www.twitch.tv/bau_live'>
-                                <FaTwitch size={24} />
-                            </a>
-                            <a href='https://bau-games.itch.io/'>
-                                <FaItchIo size={24} />
                             </a>
                         </div>
                     </nav>
